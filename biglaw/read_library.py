@@ -4,7 +4,7 @@ import sys
 
 def read_library(file):
     dictionary = dict()
-    content = open(file).read().split('\n')
+    content = open(file).readlines()
     for entry in content:
         kv = entry.split(' | ')
         dictionary[kv[0]] = int(kv[1])
